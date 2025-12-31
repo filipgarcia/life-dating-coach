@@ -25,7 +25,8 @@ export const sv = {
         transition: "Det finns ett bättre sätt.",
     },
     approach: {
-        headline: "Transformera allt som spelar roll",
+        headline: "Förändra det som spelar roll",
+        subtitle: "Omfattande coaching som täcker alla aspekter av ditt liv.",
         cards: [
             { title: "Online närvaro", desc: "Profiloptimering, bilder, meddelanden" },
             { title: "Kommunikationsförmåga", desc: "Konversation, berättande, kontakt" },
