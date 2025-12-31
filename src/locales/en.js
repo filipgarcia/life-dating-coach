@@ -37,7 +37,24 @@ export const en = {
     },
     socialProof: {
         headline: "Real Transformations, Real Results",
-        stats: "87% Confidence Increase | 5x More Quality Matches | 90% Client Satisfaction",
+        stats: "Confidence Increase | 5x More Quality Matches | 90% Client Satisfaction",
+        reviews: [
+            {
+                text: "I was skeptical about 'dating coaches', but this wasn't about tricks. It was about honest self-reflection and communication. I've never felt more grounded.",
+                author: "Marcus, 34",
+                location: "Stockholm"
+            },
+            {
+                text: "Filip pointed out blind spots in my behavior I'd missed for years. It was uncomfortable at first, but exactly what I needed to grow.",
+                author: "Miguel, 29",
+                location: "Stockholm"
+            },
+            {
+                text: "The focus on lifestyle design rather than just 'getting dates' changed my whole perspective. I'm attracting specific people now, not just anyone.",
+                author: "James, 24",
+                location: "Stockholm"
+            }
+        ]
     },
     howItWorks: {
         headline: "Your Journey to Transformation",
@@ -127,9 +144,18 @@ export const en = {
         },
         story: {
             title: "My Story",
-            content1: "For years, I thought the key to confidence was hiding my flaws and putting on a performance. I studied 'pickup' lines, memorized routines, and tried to be the person I thought women wanted. It worked... superficially. But inside, I felt more disconnected than ever.",
-            content2: "The turning point came when I realized that true confidence doesn't come from perfected techniques, but from radical self-acceptance and genuine skill building. I shifted my focus to holistic development—improving my communication, my lifestyle, and my physical health not to impress others, but to respect myself.",
-            content3: "Now, I help men skip the years of trial and error (and the cringe-worthy phases) to build a life they are proud to share with someone else."
+            intro: "How would you feel if I told you that confidence is not about perfection, but about being willing to be a **beginner again and again**?",
+            earlyYears: "For years, I thought I had to have all the answers. As a junior tennis player competing at the top level, I learned discipline and dedication. But when it came to dating and relationships, I was starting from scratch.",
+            education: "I studied social sciences, social work, and behavioral psychology. For more than a decade, I have worked with RFSL and RFSU on sexual health and relationships, and supported youth and young adults through social services and mentorship. I also wrote a dating book. But the real education came from living it. I have navigated multiple monogamous relationships, learned to genuinely enjoy being single, and eventually built a fulfilling relationship that has lasted nine years and that we have since opened to dating others.",
+            turningPoint: {
+                text: "The breakthrough came when I stopped trying to be “good enough” and started living a simple truth:",
+                quote: "There is no intimacy without vulnerability.",
+                subtext: "The more I tried to be perfect, the less human I became. When I allowed myself to be imperfect, open, and real, something shifted. I became a three dimensional human being. And that is what creates attraction, trust, and real connection."
+            },
+            growth: "Since I was 22, I have committed to learning something completely new every year. Skating, riding a motorcycle, coding and switching careers, diving into AI and switching careers again. Each time, I faced the familiar fear of being a beginner. Each time, I learned to **stay with the frustration** and let it become part of the growth.",
+            philosophy: "This is what I help others understand. **True confidence** does not come from perfected techniques, but from self acceptance and genuine skill building. Whether it is your first conversation with a stranger or reigniting connection with a long term partner, it is about making people feel seen, special, and acknowledged, not performing a script.",
+            promise: "I help people skip years of trial and error to build authentic confidence, meaningful connection, and a life they are genuinely proud to share. Because connection is not a superpower reserved for the naturally charismatic. It is a skill anyone can learn.",
+            closing: "And it all starts with being willing to be a beginner."
         },
         credentials: {
             title: "My Background",
@@ -215,7 +241,7 @@ export const en = {
             subtitle: "Real guys. Real challenges. Real results.",
         },
         stats: {
-            confidence: "87% Confidence Increase",
+            confidence: "Confidence Increase",
             matches: "5x More Quality Matches",
             program: "92% complete program",
             satisfaction: "4.9/5 client satisfaction"

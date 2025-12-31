@@ -10,6 +10,14 @@
     margin-bottom: 24px;
 }
 
+@media (max-width: 768px) {
+    .results-hero h1 {
+        font-size: 2rem;
+        padding: 0 16px;
+        word-wrap: break-word;
+    }
+}
+
 .results-hero .subtitle {
     font-size: 1.5rem;
     color: #bfdbfe;

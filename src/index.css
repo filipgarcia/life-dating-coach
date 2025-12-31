@@ -116,6 +116,10 @@ img {
   padding: 80px 0;
 }
 
+.section-compact {
+  padding: 40px 0;
+}
+
 .text-center {
   text-align: center;
 }

@@ -163,15 +163,17 @@ const Home = () => {
                     </div>
 
                     <div className="testimonial-grid">
-                        {[1, 2, 3].map((i) => (
+                        {(t.socialProof.reviews || []).map((review, i) => (
                             <div key={i} className="testimonial-card">
                                 <div className="quote-mark">"</div>
-                                <p style={{ marginBottom: '24px', position: 'relative', zIndex: 10, lineHeight: 1.6 }}>"The coaching completely changed how I view myself. I went from terrified of dating to actually enjoying it. Highly recommended."</p>
+                                <p style={{ marginBottom: '24px', position: 'relative', zIndex: 10, lineHeight: 1.6 }}>"{review.text}"</p>
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                                    <div style={{ width: '40px', height: '40px', backgroundColor: '#d1d5db', borderRadius: '50%', marginRight: '12px' }}></div>
+                                    <div style={{ width: '40px', height: '40px', backgroundColor: '#d1d5db', borderRadius: '50%', marginRight: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#6b7280' }}>
+                                        {review.author.charAt(0)}
+                                    </div>
                                     <div>
-                                        <p style={{ fontWeight: 'bold', color: 'var(--color-primary)', fontSize: '0.9rem' }}>Client Name</p>
-                                        <p style={{ fontSize: '0.75rem', color: '#6b7280' }}>Stockholm, SE</p>
+                                        <p style={{ fontWeight: 'bold', color: 'var(--color-primary)', fontSize: '0.9rem' }}>{review.author}</p>
+                                        <p style={{ fontSize: '0.75rem', color: '#6b7280' }}>{review.location}</p>
                                     </div>
                                 </div>
                             </div>

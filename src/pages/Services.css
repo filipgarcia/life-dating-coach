@@ -8,6 +8,15 @@
 .services-hero h1 {
     font-size: 3rem;
     margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .services-hero h1 {
+        font-size: 2rem;
+        padding: 0 16px;
+        word-wrap: break-word;
+    }
 }
 
 .services-hero .subtitle {

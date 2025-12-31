@@ -37,7 +37,24 @@ export const sv = {
     },
     socialProof: {
         headline: "Verkliga transformationer, verkliga resultat",
-        stats: "87% ökning i självförtroende | 5x fler kvalitetsmatchar | 90% nöjda klienter",
+        stats: "Ökning i självförtroende | 5x fler kvalitetsmatchar | 90% nöjda klienter",
+        reviews: [
+            {
+                text: "Jag var skeptisk till 'dejtingcoacher', men det här handlade inte om knep. Det handlade om ärlig självreflektion och kommunikation. Jag har aldrig känt mig mer grundad.",
+                author: "Marcus, 34",
+                location: "Stockholm"
+            },
+            {
+                text: "Filip pekade på blinda fläckar i mitt beteende som jag missat i åratal. Det var obekvämt i början, men exakt vad jag behövde för att växa.",
+                author: "Miguel, 29",
+                location: "Stockholm"
+            },
+            {
+                text: "Fokus på livsstilsdesign snarare än att bara 'få dejter' ändrade hela mitt perspektiv. Jag attraherar specifika människor nu, inte bara vem som helst.",
+                author: "James, 24",
+                location: "Stockholm"
+            }
+        ]
     },
     howItWorks: {
         headline: "Din resa mot transformation",
@@ -126,9 +143,18 @@ export const sv = {
         },
         story: {
             title: "Min historia",
-            content1: "I åratal trodde jag att nyckeln till självförtroende var att dölja mina brister och spela en roll. Jag studerade 'raggningsrepliker', memorerade rutiner och försökte vara personen jag trodde kvinnor ville ha. Det fungerade... ytligt sett. Men inombords kände jag mig mer bortkopplad än någonsin.",
-            content2: "Vändpunkten kom när jag insåg att sant självförtroende inte kommer från perfekta tekniker, utan från radikal självacceptans och att bygga verkliga färdigheter. Jag skiftade fokus till holistisk utveckling—att förbättra min kommunikation, min livsstil och min fysiska hälsa—inte för att imponera på andra, utan för att respektera mig själv.",
-            content3: "Nu hjälper jag män att hoppa över åren av försök och misstag (och de pinsamma faserna) för att bygga ett liv de är stolta över att dela med någon annan."
+            intro: "Hur skulle du känna om jag sa att självkänsla inte handlar om perfektion, utan om att våga vara **nybörjare om och om igen**?",
+            earlyYears: "I många år trodde jag att jag behövde ha alla svar. Som junior tennisspelare på toppnivå lärde jag mig disciplin och dedikation. Men när det kom till dejting och relationer började jag om från noll.",
+            education: "Jag studerade samhällsvetenskap, socialt arbete och beteendepsykologi. I över tio år har jag arbetat med RFSL och RFSU kring sexuell hälsa och relationer, och jag har stöttat unga och unga vuxna genom socialtjänsten och mentorskap. Jag har också skrivit en dejtingbok. Men den viktigaste utbildningen kom av att leva det. Jag har haft flera monogama relationer, lärt mig trivas som singel, och till slut byggt en trygg relation som nu har varat i nio år och som vi sedan har öppnat upp för att dejta andra.",
+            turningPoint: {
+                text: "Vändpunkten kom när jag slutade försöka vara “tillräcklig” och började förstå en enkel sanning:",
+                quote: "Det finns ingen intimitet utan sårbarhet.",
+                subtext: "Ju mer jag försökte vara perfekt, desto mindre mänsklig blev jag. När jag i stället vågade vara lite kantig, lite osäker, lite mer ärlig, då hände något. Jag blev en verklig, tredimensionell människa. Och det är precis den typen av mänsklighet som skapar attraktion, trygghet och kontakt."
+            },
+            growth: "Sedan jag var 22 har jag bestämt mig för att lära mig något helt nytt varje år. Jag har lärt mig åka skridskor, köra motorcykel, koda och byta karriär, och senare fördjupa mig i AI och byta karriär igen. Varje gång har jag mött den där bekanta rädslan för att vara ny. Varje gång har jag tränat mig i att **stå kvar i frustrationen** och låta den bli en del av utvecklingen.",
+            philosophy: "Det är det här jag hjälper andra att förstå. **Äkta självkänsla** kommer inte från perfekta tekniker, utan från självacceptans och verkliga färdigheter. Oavsett om det handlar om ditt första samtal med en främling eller att tända gnistan i en lång relation så handlar det om att få människor att känna sig sedda, speciella och bekräftade, inte om att leverera ett manus.",
+            promise: "Jag hjälper människor att hoppa över år av trial and error och bygga autentisk självkänsla, meningsfulla relationer och ett liv de faktiskt är stolta över att dela. För kontakt är ingen superkraft för de “naturligt karismatiska”. Det är en färdighet som går att lära sig.",
+            closing: "Och allt börjar med att våga vara nybörjare."
         },
         credentials: {
             title: "Min bakgrund",
@@ -214,7 +240,7 @@ export const sv = {
             subtitle: "Verkliga killar. Verkliga utmaningar. Verkliga resultat.",
         },
         stats: {
-            confidence: "87% ökning i självförtroende",
+            confidence: "Ökning i självförtroende",
             matches: "5x fler kvalitetsmatchar",
             program: "92% slutför programmet",
             satisfaction: "4,9/5 i kundnöjdhet"

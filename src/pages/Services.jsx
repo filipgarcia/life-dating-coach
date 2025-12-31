@@ -26,14 +26,14 @@ const Services = () => {
             </section>
 
             {/* Overview */}
-            <section className="section bg-white">
+            <section className="section section-compact bg-white">
                 <div className="container text-center max-w-3xl">
                     <p className="text-xl leading-relaxed text-gray-600">{t.overview}</p>
                 </div>
             </section>
 
             {/* Packages */}
-            <section className="section bg-light">
+            <section className="section section-compact bg-light">
                 <div className="container">
                     <div className="text-center mb-12">
                         <h2>{t.packages.title}</h2>
@@ -81,14 +81,14 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className="text-center mt-12 bg-blue-50 p-6 rounded-lg max-w-2xl mx-auto">
+                    <div className="text-center bg-blue-50 p-6 rounded-lg max-w-2xl mx-auto" style={{ marginTop: '80px', clear: 'both' }}>
                         <p className="font-semibold text-primary">{t.payment}</p>
                     </div>
                 </div>
             </section>
 
             {/* Unique Features */}
-            <section className="section bg-white">
+            <section className="section section-compact bg-white">
                 <div className="container">
                     <h2 className="text-center mb-12">{t.unique.title}</h2>
                     <div className="unique-grid">
@@ -103,12 +103,12 @@ const Services = () => {
             </section>
 
             {/* CTA */}
-            <section className="section cta-section bg-gray-900 text-white text-center">
+            <section className="section section-compact cta-section bg-gray-900 text-white text-center" style={{ paddingBottom: '120px' }}>
                 <div className="container">
                     <h2 className="text-3xl font-bold mb-4">{t.cta.title}</h2>
                     <p className="text-xl text-gray-400 mb-8">{t.cta.subtitle}</p>
                     <Link to={getLink('/apply')} className="btn btn-primary btn-large">
-                        {t.cta.title} <ArrowRight className="inline-block ml-2" />
+                        {t.cta.title}
                     </Link>
                 </div>
             </section>
