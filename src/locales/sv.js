@@ -12,8 +12,8 @@ export const sv = {
         apply: "Ansök nu",
     },
     hero: {
-        headline: "Sluta låtsas. Börja bli.",
-        subheadline: "Personlig utveckling som transformerar ditt självförtroende, din livsstil och dina relationer—inifrån och ut.",
+        headline: "Sluta låtsas. Bli den du vill vara.",
+        subheadline: "Personlig utveckling som transformerar ditt självförtroende, din livsstil och dina relationer, inifrån och ut.",
         ctaPrimary: "Starta din transformation",
         ctaSecondary: "Se hur det fungerar",
     },

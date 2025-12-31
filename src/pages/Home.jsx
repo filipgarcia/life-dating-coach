@@ -1,7 +1,19 @@
 import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, CheckCircle, Shield, Users, TrendingUp, MessageCircle, Heart, Activity } from 'lucide-react';
+import {
+    ArrowRight,
+    CheckCircle,
+    Shield,
+    Users,
+    TrendingUp,
+    MessageCircle,
+    Heart,
+    Activity,
+    Drama,
+    Puzzle,
+    Sprout
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -70,14 +82,24 @@ const Home = () => {
                     </div>
 
                     <div className="problem-grid">
-                        {[t.problem.card1, t.problem.card2, t.problem.card3].map((text, idx) => (
-                            <div key={idx} className="problem-card">
-                                <div className="problem-icon">
-                                    <span>!</span>
-                                </div>
-                                <p className="text-lg font-medium">{text}</p>
+                        <div className="problem-card">
+                            <div className="problem-icon-wrapper">
+                                <Drama size={48} strokeWidth={1.5} style={{ color: '#1e3a8a' }} />
                             </div>
-                        ))}
+                            <p className="text-lg font-medium">{t.problem.card1}</p>
+                        </div>
+                        <div className="problem-card">
+                            <div className="problem-icon-wrapper">
+                                <Puzzle size={48} strokeWidth={1.5} style={{ color: '#f97316' }} />
+                            </div>
+                            <p className="text-lg font-medium">{t.problem.card2}</p>
+                        </div>
+                        <div className="problem-card">
+                            <div className="problem-icon-wrapper">
+                                <Sprout size={48} strokeWidth={1.5} style={{ color: '#059669' }} />
+                            </div>
+                            <p className="text-lg font-medium">{t.problem.card3}</p>
+                        </div>
                     </div>
 
                     <div className="text-center" style={{ marginTop: '48px' }}>
