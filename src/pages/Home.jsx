@@ -16,10 +16,25 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import lifestyleCollage from '../assets/lifestyle-collage.png';
+import approachOnline from '../assets/approach_online.png';
+import approachCommunication from '../assets/approach_communication.png';
+import approachLifestyle from '../assets/approach_lifestyle.png';
+import approachPhysical from '../assets/approach_physical.png';
+import approachMindset from '../assets/approach_mindset.png';
 
 const Home = () => {
     const { translations, language } = useTranslation();
     const t = translations;
+
+    // Mapping images to the cards array (order matters based on en.js/sv.js)
+    const approachImages = [
+        approachOnline,
+        approachCommunication,
+        approachLifestyle,
+        approachPhysical,
+        approachMindset
+    ];
 
     // Icons mapping for Approach section
     const approachIcons = [
@@ -30,7 +45,7 @@ const Home = () => {
         <Heart className="w-8 h-8" size={32} />
     ];
 
-    const getLink = (path) => language === 'sv' ? `/sv${path}` : path;
+    const getLink = (path) => language === 'sv' ? `/ sv${path} ` : path;
 
     return (
         <div>
@@ -102,8 +117,12 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="text-center" style={{ marginTop: '48px' }}>
-                        <p className="text-xl" style={{ color: 'var(--color-primary-light)', fontStyle: 'italic', fontWeight: 600 }}>{t.problem.transition}</p>
+                    <div className="transition-banner">
+                        <div className="transition-bg" style={{ backgroundImage: `url(${lifestyleCollage})` }}></div>
+                        <div className="transition-overlay"></div>
+                        <div className="transition-content">
+                            <p className="transition-text">"{t.problem.transition}"</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -113,17 +132,20 @@ const Home = () => {
                 <div className="container">
                     <div className="section-title-container">
                         <h2 className="section-title">{t.approach.headline}</h2>
-                        <p style={{ color: '#4b5563', maxWidth: '600px', margin: '0 auto' }}>Comprehensive coaching covering every aspect of your life.</p>
+                        <p style={{ color: '#4b5563', maxWidth: '600px', margin: '0 auto' }}>{t.approach.subtitle}</p>
                     </div>
 
                     <div className="approach-grid">
                         {t.approach.cards.map((card, idx) => (
-                            <div key={idx} className="approach-card">
-                                <div className="approach-icon-box">
-                                    {approachIcons[idx] || <CheckCircle />}
+                            <div key={idx} className="approach-card-visual">
+                                <div className="approach-card-image">
+                                    <img src={approachImages[idx]} alt={card.title} />
+                                    <div className="approach-card-overlay"></div>
                                 </div>
-                                <h3 className="mb-4" style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-primary)' }}>{card.title}</h3>
-                                <p style={{ color: '#4b5563', lineHeight: 1.6 }}>{card.desc}</p>
+                                <div className="approach-card-content">
+                                    <h3 className="approach-card-title">{card.title}</h3>
+                                    <p className="approach-card-desc">{card.desc}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

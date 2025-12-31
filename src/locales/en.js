@@ -26,6 +26,7 @@ export const en = {
     },
     approach: {
         headline: "Transform Everything That Matters",
+        subtitle: "Comprehensive coaching covering every aspect of your life.",
         cards: [
             { title: "Online Presence", desc: "Profile optimization, photos, messaging" },
             { title: "Communication Skills", desc: "Conversation, storytelling, connection" },
