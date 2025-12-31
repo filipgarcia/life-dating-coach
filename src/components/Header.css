@@ -1,0 +1,148 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #eee;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    max-width: var(--spacing-container);
+    margin: 0 auto;
+    padding: 0 var(--spacing-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--color-secondary);
+}
+
+.nav-desktop {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+    .nav-desktop {
+        display: none;
+    }
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+    color: var(--color-secondary);
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.lang-toggle:hover {
+    color: var(--color-secondary);
+}
+
+.btn-apply {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 24px;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-apply:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.mobile-controls {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-controls {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: var(--shadow-lg);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mobile-nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
